@@ -2,3 +2,16 @@ litter
 
 
 simple set of scripts to pull data from the litter robot
+
+
+
+Example Output:
+
+(venv)whisper:litter-robot david$ python activity.py 
+
+{
+    "timestamp": "2017-12-17T05:29:48.336279", 
+    "unitStatus": "RDY", 
+    "litterRobotId": "42b0b234c349"
+}
+
