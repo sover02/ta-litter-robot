@@ -18,13 +18,13 @@ url = url_base + activity_endpoint
 activities = json.loads(requests.get(url, headers=headers, params=params).text)['activities']
 
 for activity in reversed(activities):
-   event_time = calendar.timegm(time.strptime(activity['timestamp'], '%Y-%m-%dT%H:%M:%S.%f'))
-   new_last_update = int(event_time)
-   if int(event_time) > int(last_update):
-      print json.dumps(activity, indent=4)
+    event_time = calendar.timegm(time.strptime(activity['timestamp'], '%Y-%m-%dT%H:%M:%S.%f'))
+    new_last_update = int(event_time)
+    if int(event_time) > int(last_update):
+        print json.dumps(activity, indent=4)
 
 config.set('activity', 'last_update', new_last_update)
 with open('state', 'wb') as configfile:
-    config.write(configfile)
+     config.write(configfile)
 
 # fin
