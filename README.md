@@ -28,7 +28,7 @@ x-api-key = sesks4saFEdlk332klssSDSKGAar
 `python activity.py`
 
 
-* Coming Soon - `run\_cycle.py`
+* Coming Soon - `run_cycle.py`
 
 ### Example Output:
 
