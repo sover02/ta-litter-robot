@@ -35,11 +35,6 @@ x-api-key = sesks4saFEdlk332klssSDSKGAar
     (venv)whisper:litter-robot david$ python activity.py 
 
     {
-	"timestamp": "2017-12-16T23:44:25.379723", 
-	"unitStatus": "OFF", 
-	"litterRobotId": "3434lddaseb3c9"
-    }
-    {
 	"timestamp": "2017-12-16T23:44:38.689644", 
 	"unitStatus": "RDY", 
 	"litterRobotId": "3434lddaseb3c9"
@@ -50,22 +45,23 @@ x-api-key = sesks4saFEdlk332klssSDSKGAar
 	"litterRobotId": "3434lddaseb3c9"
     }
     {
-	"timestamp": "2017-12-16T23:46:57.705861", 
-	"unitStatus": "CCC", 
-	"litterRobotId": "3434lddaseb3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:47:04.560274", 
-	"unitStatus": "RDY", 
-	"litterRobotId": "3434lddaseb3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:49:15.449989", 
+	"timestamp": "2017-12-16T23:46:51.379723", 
 	"unitStatus": "CST", 
 	"litterRobotId": "3434lddaseb3c9"
     }
     {
-	"timestamp": "2017-12-16T23:50:07.489981", 
-	"unitStatus": "RDY", 
+	"timestamp": "2017-12-16T23:46:57.705861", 
+	"unitStatus": "CCC", 
 	"litterRobotId": "3434lddaseb3c9"
     }
+
+
+### Status Codes Mapping:
+
+| Code | Message |
+| ---- |:-------:|
+| RDY  | Ready |
+| CCC  | Clean Cycle Complete |
+| CCP  | Clean Cycle In Progress |
+| CST  | Cat Sensor Timing |
+| OFF  | Device is off.  I'm not sure how this even comes up... |
