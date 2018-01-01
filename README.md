@@ -5,6 +5,30 @@ litter-robot
 simple set of scripts to pull data from the litter-robot
 --------------------------------------------------------
 
+### How to use:
+
+1. Get x-api-key from the Litter Robot Connect App. Hell if I know how they translate the credentials into the JWT and then into the x-api-key, but you can use burpsuite or some other web proxy solution to intercept web traffic between the app and the CloudFront API.  
+Resources:
+* Configuring an iOS Device to Work With Burp (https://support.portswigger.net/customer/portal/articles/1841108-configuring-an-ios-device-to-work-with-burp)
+* Installing Burp's CA Certificate in an iOS Device (https://support.portswigger.net/customer/portal/articles/1841109-Mobile%20Set-up\_iOS%20Device%20-%20Installing%20CA%20Certificate.html)
+
+
+2. Create your virtual environment, activate it, and install necessary packages.
+* `virtualenv venv`
+* `. venv/bin/activate`
+* `pip install -r requirements.txt`
+
+3. Add x-api token to state file. Copy or rename `state.example` to `state`. Add in your x-api token.  It should look something like:
+```
+[auth]
+x-api-key = sesks4saFEdlk332klssSDSKGAar
+```
+
+4. Run it. 
+`python activity.py`
+
+
+\*. Coming Soon - run\_cycle.py
 
 ### Example Output:
 
@@ -13,110 +37,35 @@ simple set of scripts to pull data from the litter-robot
     {
 	"timestamp": "2017-12-16T23:44:25.379723", 
 	"unitStatus": "OFF", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:44:38.689644", 
 	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:46:43.766606", 
 	"unitStatus": "CCP", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:46:57.705861", 
 	"unitStatus": "CCC", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:47:04.560274", 
 	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:49:15.449989", 
 	"unitStatus": "CST", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
     {
 	"timestamp": "2017-12-16T23:50:07.489981", 
 	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:52:28.837930", 
-	"unitStatus": "CCP", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:52:46.294586", 
-	"unitStatus": "CCC", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:52:53.325094", 
-	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:53:18.243524", 
-	"unitStatus": "CST", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-16T23:59:56.604402", 
-	"unitStatus": "CCP", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T00:00:13.557046", 
-	"unitStatus": "CCC", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T02:46:43.683554", 
-	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T02:54:49.997598", 
-	"unitStatus": "CST", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T02:57:10.905075", 
-	"unitStatus": "CCP", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T02:57:28.772093", 
-	"unitStatus": "CCC", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T04:13:46.680170", 
-	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T04:29:52.190148", 
-	"unitStatus": "CST", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T04:32:06.130667", 
-	"unitStatus": "CCP", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T04:32:24.145378", 
-	"unitStatus": "CCC", 
-	"litterRobotId": "1c283ddfb0b3c9"
-    }
-    {
-	"timestamp": "2017-12-17T05:32:37.185095", 
-	"unitStatus": "RDY", 
-	"litterRobotId": "1c283ddfb0b3c9"
+	"litterRobotId": "3434lddaseb3c9"
     }
