@@ -1,6 +1,6 @@
 unitStatus,message,description,,,,
 RDY,Ready,The Litter-Robot is ready for your cat,,,,
-CCC,Clean Cycle Completed,Clean litter is no ready for next use,,,,
+CCC,Clean Cycle Completed,Clean litter is now ready for next use,,,,
 CCP,Clean Cycle In Progress,Litter-Robot is running a Clean Cycle,,,,
 CST,Cat Sensor Timing,"Cat was in Litter-Robot, timer is waiting to start Clean Cycle",,,,
 CSF,Cat Sensor Fault,Weight in the Litter-Robot is too heavy,,,,
