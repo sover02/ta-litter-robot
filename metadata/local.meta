@@ -1,0 +1,17 @@
+[lookups/lr_status.csv]
+export = system
+owner = admin
+version = 7.0.0
+modtime = 1514916597.471445000
+
+[transforms/lr_status]
+export = system
+owner = admin
+version = 7.0.0
+modtime = 1514916787.147893000
+
+[props/litter-robot_json/LOOKUP-Litter%20Robot%20Status%20Lookup]
+export = system
+owner = admin
+version = 7.0.0
+modtime = 1514916861.313693000
