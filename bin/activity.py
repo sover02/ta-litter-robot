@@ -3,9 +3,12 @@ import requests
 import calendar
 import time
 import json
+import os
+
+state_file  = os.path.dirname(os.path.realpath(__file__)) + "/state"
 
 config = ConfigParser.ConfigParser()
-config.read("state")
+config.read(state_file)
 last_update = config.get('activity', 'last_update')
 
 headers = { 'x-api-key' : config.get('auth', 'x-api-key') }
@@ -24,7 +27,7 @@ for activity in reversed(activities):
         print json.dumps(activity, indent=4)
 
 config.set('activity', 'last_update', new_last_update)
-with open('state', 'wb') as configfile:
+with open(state_file, 'wb') as configfile:
      config.write(configfile)
 
 # fin
