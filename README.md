@@ -1,9 +1,9 @@
 ta-litter-robot
-============
+===============
 
 
-A Splunk App for getting data from your Robot Litter Box!
----------------------------------------------------------
+A Splunk App for getting data from your [Robot Litter Box] (https://www.litter-robot.com/)!
+-------------------------------------------------------------------------------------------
 
 ### How to use:
 
