@@ -50,3 +50,16 @@ x-api-key = sesks4saFEdlk332klssSDSKGAar
 	"unitStatus": "CCC", 
 	"litterRobotId": "3434lddaseb3c9"
     }
+
+### Screenshots
+
+Raw Events
+![Raw Events](https://raw.github.com/sover02/litter-robot/screenshots/contrib/Screen%20Shot%202018-01-02%20at%202.13.10%20PM.png)
+
+Lookup Table with Types of Litter Robot Events
+![Lookup Table with Types of Litter Robot Events](https://raw.github.com/sover02/litter-robot/screenshots/contrib/Screen%20Shot%202018-01-02%20at%202.16.08%20PM.png)
+
+Robot Events Tracked over Time
+![Robot Events Tracked over Time](https://raw.github.com/sover02/litter-robot/screenshots/contrib/Screen%20Shot%202018-01-02%20at%202.15.37%20PM.png)
+
+
