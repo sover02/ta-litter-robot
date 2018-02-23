@@ -15,7 +15,7 @@ headers = { 'x-api-key' : config.get('auth', 'x-api-key') }
 params = { 'limit' : 200 }
 
 url_base = 'https://muvnkjeut7.execute-api.us-east-1.amazonaws.com/'
-activity_endpoint = 'staging/users/209735/litter-robots/1c283ddfb0b3c9/activity' #?limit=200
+activity_endpoint = config.get('auth', 'endpoint')
 url = url_base + activity_endpoint
 
 activities = json.loads(requests.get(url, headers=headers, params=params).text)['activities']
