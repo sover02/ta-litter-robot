@@ -3,5 +3,5 @@ chardet==3.0.4
 configparser==3.5.0
 idna==2.6
 requests==2.18.4
-urllib3==1.22
+urllib3==1.23
 wsgiref==0.1.2
